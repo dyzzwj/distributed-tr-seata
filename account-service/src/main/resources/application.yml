@@ -1,0 +1,16 @@
+server:
+  port: 1000
+
+spring:
+  application:
+    name: account-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# 声明feign的hystrix支持
+feign:
+  hystrix:
+    enabled: true
